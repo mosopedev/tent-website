@@ -286,14 +286,14 @@
 
 .feature-desc {
     max-width: 50vw;
-    width: auto;
+    /* width: auto; */
 }
 
 .feature-desc h2 {
     font-family: 'poppins';
     font-weight: 600;
     font-size: 22px;
-    line-height: 34px;
+    /* line-height: 34px; */
     letter-spacing: -0.433333px;
     color: #FF5722;
 }
@@ -306,7 +306,7 @@
     font-weight: 600;
     font-size: 52px;
     line-height: 62px;
-    letter-spacing: -0.938889px;
+    /* letter-spacing: -0.938889px; */
     color: #1A1A1A;
     width: 80%;
     margin: 20px 0 0;
@@ -350,7 +350,7 @@
     position: relative;
     width: 80%;
     height: 400px;
-    margin: auto;
+    margin: 60px auto 0;
     border-radius: 30px;
     overflow: hidden;
 }
@@ -393,7 +393,7 @@
     }
 
     .community-illustration {
-        bottom: -50px;
+        bottom: -80px;
     }
 }
 
@@ -643,6 +643,7 @@
     .feature-desc h3 {
         margin: auto;
         font-size: 35px;
+        line-height: 30px;
     }
 
     .community-mockup {
@@ -654,8 +655,41 @@
     }
 
     .ticket-mockup {
-        width: 400px;
+        width: 80vw;
         left: -30px;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .event-illustration {
+        margin: 30px 0;
+        width: 280px;
+        height: 280px;
+    }
+
+    .event-illustration .event-phone-mockup {
+        position: absolute;
+        left: 14%;
+        height: 250px;
+    }
+
+    .feature-desc {
+        width: 98%;
+    }
+
+    .feature-desc h2 {
+        font-size: 16px;
+    }
+
+    .feature-desc h3 {
+        margin: auto;
+        font-size: 30px;
+    }
+
+    .post-illustration .post-mockup1 {
+        left: 10px;
+        width: 270px;
+    }
+
 }
 </style>
