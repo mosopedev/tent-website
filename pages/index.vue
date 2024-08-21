@@ -306,10 +306,10 @@
     font-weight: 600;
     font-size: 52px;
     line-height: 62px;
-    /* letter-spacing: -0.938889px; */
+    letter-spacing: -0.938889px;
     color: #1A1A1A;
     width: 80%;
-    margin: 20px 0 0;
+    margin: 20px 0 20px;
 }
 
 .feature-desc.dark-sect .feature-text {
@@ -643,7 +643,6 @@
     .feature-desc h3 {
         margin: auto;
         font-size: 35px;
-        line-height: 30px;
     }
 
     .community-mockup {
@@ -683,7 +682,13 @@
 
     .feature-desc h3 {
         margin: auto;
+        line-height: 40px;
         font-size: 30px;
+    }
+
+    .feature-text {
+        font-size: 16px;
+        width: 95%;
     }
 
     .post-illustration .post-mockup1 {
