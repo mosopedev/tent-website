@@ -83,7 +83,7 @@
             <!-- community feature end  -->
 
             <!-- ticket feature -->
-            <div class="feature dark-sect">
+            <div class="feature dark-sect ticket-feature">
                 <div class="feature-desc dark-sect">
                     <h2>Tickets</h2>
                     <h3>Get event tickets on the go.</h3>
@@ -222,7 +222,6 @@
     border-radius: 15px;
     background: rgba(107, 12, 255, 0.3);
     float: right;
-
 }
 
 .post-illustration {
@@ -237,8 +236,8 @@
     position: relative;
     top: auto;
     /* background-color: #1A1A1A; */
-    /* left: -50px; */
-    bottom: -80px;
+    /* left: -80px; */
+    bottom: -30px;
 }
 
 .ticket-illustration {
@@ -248,6 +247,7 @@
 
 .community-mockup {
     width: 550px;
+    /* background-color: #1A1A1A */
 }
 
 .post-illustration .post-mockup1 {
@@ -388,9 +388,23 @@
 
 @media screen and (min-width: 1201px) {
     .post-illustration {
-    /* background-color: red; */
-    right: -160px;
+        /* background-color: red; */
+        right: -160px;
+    }
+
+    .community-illustration {
+        bottom: -50px;
+    }
 }
+
+@media screen and (max-width: 1300px) {
+    .community-illustration {
+        left: -80px;
+    }
+
+    .community-mockup {
+        width: 470px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -472,9 +486,11 @@
     .cta-overlay .cta-text {
         font-size: 30px;
     }
+
     .hero-tent-logo {
         width: 80px;
     }
+
     .hero-overlay h1 {
         width: 95%;
         margin: 30px 0 0;
@@ -490,14 +506,97 @@
 
     .feature {
         flex-direction: column;
-        /* padding: 40px 20px;  */
-        gap: 40px;
-}
+        text-align: center;
+    }
+
+    .feature-desc {
+        /* background-color: rebeccapurple; */
+        max-width: 75%;
+        margin: auto;
+    }
+
+    .feature-desc h2 {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .feature-desc h3 {
+        margin: auto;
+    }
+
+    .feature-text {
+        margin: auto;
+    }
+
+    .event-feature {
+        padding: 40px 0;
+    }
+
+    .event-illustration {
+        margin: 30px 0;
+        width: 320px;
+        height: 300px;
+        float: left;
+        right: 0;
+    }
+
+    .event-illustration .event-phone-mockup {
+        position: absolute;
+        left: 16%;
+        height: 250px;
+    }
+
+    .feature-illustration .event-ticket {
+        left: -30px;
+    }
+
+    .post-illustration {
+        /* background-color: rebeccapurple; */
+        right: 0;
+        height: 55vh;
+    }
+
+    .post-illustration .post-mockup1 {
+        left: 10px;
+    }
 
     .post-illustration .post-mockup2 {
         display: none;
     }
 
+    .feature.dark-sect {
+        padding: 40px 0 0;
+    }
+
+    .community-feature {
+        padding: 40px 0 0;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .community-mockup {
+        width: 400px;
+    }
+
+    .community-illustration {
+        left: -40px;
+    }
+
+    .ticket-feature {
+        align-items: center;
+    }
+
+    .ticket-illustration {
+        /* background-color: rebeccapurple; */
+        right: auto;
+        width: fit-content;
+    }
+
+    .ticket-mockup {
+        position: relative;
+        width: 500px;
+        left: -30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -530,6 +629,94 @@
         margin: 30px 0 0;
         width: 90%;
         font-size: 18px;
+    }
+
+    .feature-desc {
+        /* background-color: rebeccapurple; */
+        max-width: 95%;
+    }
+
+    .feature-desc h2 {
+        font-size: 18px;
+    }
+
+    .feature-desc h3 {
+        margin: auto;
+        font-size: 35px;
+    }
+
+    .feature-text {
+        margin: auto;
+    }
+
+    .event-feature {
+        padding: 40px 0;
+    }
+
+    .event-illustration {
+        margin: 30px 0;
+        width: 320px;
+        height: 300px;
+        float: left;
+        right: 0;
+    }
+
+    .event-illustration .event-phone-mockup {
+        position: absolute;
+        left: 16%;
+        height: 250px;
+    }
+
+    .feature-illustration .event-ticket {
+        left: -30px;
+    }
+
+    .post-illustration {
+        /* background-color: rebeccapurple; */
+        right: 0;
+        height: 55vh;
+    }
+
+    .post-illustration .post-mockup1 {
+        left: 10px;
+    }
+
+    .post-illustration .post-mockup2 {
+        display: none;
+    }
+
+    .feature.dark-sect {
+        padding: 40px 0 0;
+    }
+
+    .community-feature {
+        padding: 40px 0 0;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .community-mockup {
+        width: 400px;
+    }
+
+    .community-illustration {
+        left: -40px;
+    }
+
+    .ticket-feature {
+        align-items: center;
+    }
+
+    .ticket-illustration {
+        /* background-color: rebeccapurple; */
+        right: auto;
+        width: fit-content;
+    }
+
+    .ticket-mockup {
+        position: relative;
+        width: 500px;
+        left: -30px;
     }
 }
 </style>

@@ -82,7 +82,7 @@ const teamMembers = [
     margin: 20px 0 0;
     font-weight: 600;
     font-size: 40px;
-    line-height: 52px;
+    /* line-height: 52px; */
     /* letter-spacing: -0.758333px; */
     color: #1A1A1A;
     width: 50%;
@@ -91,7 +91,40 @@ const teamMembers = [
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+        /* justify-content: space-between; */
+        gap: 20px;
+    }
+
+    .team-mission {
+    font-size: 35px;
+    width: 80%;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .top-rw h2 {
+    font-size: 20px;
+}
+
+.socials {
+    gap: 10px;
+}
+
+.socials img {
+    width: 26px;
+}
+
+    .team-mission {
+    font-size: 28px;
+    width: 90%;
+}
 }
 </style>

@@ -152,7 +152,7 @@ onUnmounted(() => {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     z-index: 9999;
     transition: right 0.3s ease;
-    padding: 20px 40px;
+    padding: 90px 40px;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
