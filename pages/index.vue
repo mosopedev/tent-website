@@ -645,77 +645,16 @@
         font-size: 35px;
     }
 
-    .feature-text {
-        margin: auto;
-    }
-
-    .event-feature {
-        padding: 40px 0;
-    }
-
-    .event-illustration {
-        margin: 30px 0;
-        width: 320px;
-        height: 300px;
-        float: left;
-        right: 0;
-    }
-
-    .event-illustration .event-phone-mockup {
-        position: absolute;
-        left: 16%;
-        height: 250px;
-    }
-
-    .feature-illustration .event-ticket {
-        left: -30px;
-    }
-
-    .post-illustration {
-        /* background-color: rebeccapurple; */
-        right: 0;
-        height: 55vh;
-    }
-
-    .post-illustration .post-mockup1 {
-        left: 10px;
-    }
-
-    .post-illustration .post-mockup2 {
-        display: none;
-    }
-
-    .feature.dark-sect {
-        padding: 40px 0 0;
-    }
-
-    .community-feature {
-        padding: 40px 0 0;
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-
     .community-mockup {
-        width: 400px;
+        width: 350px;
     }
 
     .community-illustration {
-        left: -40px;
-    }
-
-    .ticket-feature {
-        align-items: center;
-    }
-
-    .ticket-illustration {
-        /* background-color: rebeccapurple; */
-        right: auto;
-        width: fit-content;
+        left: -30px;
     }
 
     .ticket-mockup {
-        position: relative;
-        width: 500px;
+        width: 400px;
         left: -30px;
     }
 }
