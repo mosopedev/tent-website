@@ -1,5 +1,5 @@
 <template>
-    <NavBar />
+    <Hero />
     <section class="about-us">
         <div class="header">
             <div class="top-rw">
