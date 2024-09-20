@@ -1,13 +1,14 @@
 <template>
-    <nav :class="['navbar', { 'navbar-scrolled': isScrolled }]">
+    <nav :class="['navbar']">
         <NuxtLink to="/">
-            <img src="/images/orange-tent-logo.svg" class="tent-logo" alt="Tent Logo">
+            <img src="/images/tent-logo.svg" class="tent-logo" alt="Tent Logo">
         </NuxtLink>
 
         <div class="nav-items">
             <NuxtLink to="/" :class="[$route.fullPath === '/' ? 'active' : '']">Home</NuxtLink>
-            <NuxtLink to="#features" :class="[$route.fullPath === '/#features' ? 'active' : '']">Features</NuxtLink>
             <NuxtLink to="/about" :class="[$route.fullPath === '/about' ? 'active' : '']">About Us</NuxtLink>
+            <NuxtLink to="#features" :class="[$route.fullPath === '/#features' ? 'active' : '']">Features</NuxtLink>
+            <NuxtLink to="/privacy" :class="[$route.fullPath === '/privacy' ? 'active' : '']">Privacy</NuxtLink>
             <NuxtLink to="/">
                 <button class="orange-dwl-btn">
                     Download Now
@@ -32,6 +33,7 @@
             </div>
         </div>
     </nav>
+
 </template>
 
 <script setup>
@@ -39,10 +41,6 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 const isScrolled = ref(false);
 const isSidebarOpen = ref(false);
-
-const handleScroll = () => {
-    isScrolled.value = window.scrollY > 0;
-};
 
 const toggleSidebar = () => {
     isSidebarOpen.value = !isSidebarOpen.value;
@@ -52,13 +50,6 @@ const closeSidebar = () => {
     isSidebarOpen.value = false;
 };
 
-onMounted(() => {
-    window.addEventListener('scroll', handleScroll);
-});
-
-onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll);
-});
 </script>
 <style scoped>
 .navbar {
@@ -71,7 +62,6 @@ onUnmounted(() => {
     align-items: center;
     justify-content: space-between;
     z-index: 999;
-    background-color: white;
     transition: all 0.3s ease;
 }
 
@@ -80,7 +70,7 @@ onUnmounted(() => {
 }
 
 .tent-logo {
-    width: 60px;
+    width: 30px;
     transition: all .5s;
 }
 
@@ -108,7 +98,7 @@ onUnmounted(() => {
     height: 40px;
     padding: 0 20px;
     border-radius: 30px;
-    background: #FF5722;
+    background: rgba(255, 255, 255, 0.244);
     color: #fff;
     cursor: pointer;
     font-weight: 600;
@@ -116,8 +106,12 @@ onUnmounted(() => {
     transition: all 0.3s ease;
 }
 
+.orange-dwl-btn:hover {
+    background: rgba(255, 255, 255, 0.522);
+}
+
 .nav-items a {
-    color: #1A1A1A;
+    color: #fff;
     font-size: 18px;
     transition: all 0.3s ease;
 }
@@ -183,6 +177,7 @@ onUnmounted(() => {
     .nav-items {
         display: none;
     }
+
     .navbar {
         padding: 0 20px;
     }
@@ -192,7 +187,7 @@ onUnmounted(() => {
     }
 
     .tent-logo {
-    width: 40px;
-}
+        width: 40px;
+    }
 }
 </style>

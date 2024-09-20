@@ -1,0 +1,120 @@
+<template>
+    <div class="hero-container">
+        <NavBar />
+        <div class="hero-body">
+            <div class="hero-body-bg">
+                <img src="/images/hero-bg-circle.png" alt="" class="hero-body-bg-circle">
+            </div>
+            <div class="hero-body-personas">
+                <img src="/images/hero-person1.png" data-aos="fade-right" class="hero-bg-person p1" alt="">
+                <img src="/images/hero-person2.png" data-aos="fade-up-right" class="hero-bg-person p2" alt="">
+                <img src="/images/hero-person3.png" data-aos="fade-up" class="hero-bg-person p3" alt="">
+                <img src="/images/hero-person4.png" data-aos="fade-up-left" class="hero-bg-person p4" alt="">
+                <img src="/images/hero-person5.png" data-aos="fade-left" class="hero-bg-person p5" alt="">
+            </div>
+            <div class="hero-body-overlay">
+                <h1 class="hero-heading">
+                    The app for party people looking to build lasting connections.
+                </h1>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+
+</script>
+
+<style scoped>
+.hero-container {
+    width: 98%;
+    height: 92vh;
+    margin: 30px auto 0;
+    background: linear-gradient(111.77deg, #EC8235 -12.61%, #FF5722 100%);
+    border-radius: 40px 40px 16px 16px;
+    overflow: hidden;
+}
+
+.hero-body {
+    /* background-color: red; */
+    width: 100%;
+    height: 82vh;
+    position: relative;
+}
+
+.hero-body-bg {
+    /* background: rebeccapurple; */
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-body-bg .hero-body-bg-circle {
+    margin: auto;
+    width: 70%;
+}
+
+.hero-body-personas {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    /* background-color: rebeccapurple; */
+}
+
+.hero-body-personas .hero-bg-person.p1 {
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+.hero-body-personas .hero-bg-person.p2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.hero-body-personas .hero-bg-person.p3 {
+    position: absolute;
+    bottom: 0;
+    right: 420px;
+}
+
+.hero-body-personas .hero-bg-person.p4 {
+    position: absolute;
+    float: right;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-body-personas .hero-bg-person.p5 {
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.hero-body-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rebeccapurple; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-heading {
+    width: 80%;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+</style>

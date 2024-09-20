@@ -3,6 +3,13 @@
     <section class="about-us">
         <div class="header">
             <div class="top-rw">
+                <h2>History</h2>
+            </div>
+            <p class="team-mission sm">
+                Lorem ipsum dolor sit amet consectetur. Egestas adipiscing enim molestie libero enim metus. Pulvinar nunc feugiat urna non ut scelerisque lacus mi dui. Id lacus purus felis molestie id proin. Consectetur quis ipsum mi consequat. Netus felis scelerisque vestibulum viverra aliquam tellus. Amet nibh magna mauris purus a velit diam. Maecenas fermentum id eget nullam lectus malesuada. Ornare integer cursus mauris auctor imperdiet volutpat vulputate semper. Velit feugiat sed arcu rutrum.            </p>
+        </div>
+        <div class="header">
+            <div class="top-rw">
                 <h2>Meet Out Team</h2>
                 <div class="socials">
                     <NuxtLink to="/">
@@ -86,6 +93,14 @@ const teamMembers = [
     /* letter-spacing: -0.758333px; */
     color: #1A1A1A;
     width: 50%;
+}
+
+.team-mission.sm{
+    margin: 20px 0 0;
+    font-weight: 500;
+    font-size: 22px;
+    color: #1A1A1A;
+    width: 100%;
 }
 
 .team-grid {
