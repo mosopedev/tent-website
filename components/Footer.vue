@@ -33,7 +33,7 @@
 }
 
 .footer-cta {
-    margin-top: 65px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,13 +56,13 @@
 .footer-cta button {
     width: 35%;
     height: 80px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 100%), #FF5722;
+    background: #FF5722;
     box-shadow: 0px 2.74571px 5.49142px rgba(106, 55, 25, 0.4), 0px 0px 0px 2.74571px rgba(184, 57, 3, 0.76);
     border-radius: 54.9142px;
     color: white;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 66px;
     cursor: pointer;
 }
@@ -72,8 +72,9 @@
     height: 5vh;
     display: flex;
     justify-content: space-between;
-    padding: 80px;
+    padding: 40px 80px;
     background-color: #F2F4F7;
+    /* background: red; */
 }
 
 .footer-links {

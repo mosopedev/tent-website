@@ -7,7 +7,6 @@
         <div class="nav-items">
             <NuxtLink to="/" :class="[$route.fullPath === '/' ? 'active' : '']">Home</NuxtLink>
             <NuxtLink to="/about" :class="[$route.fullPath === '/about' ? 'active' : '']">About Us</NuxtLink>
-            <NuxtLink to="#features" :class="[$route.fullPath === '/#features' ? 'active' : '']">Features</NuxtLink>
             <NuxtLink to="/privacy" :class="[$route.fullPath === '/privacy' ? 'active' : '']">Privacy</NuxtLink>
             <NuxtLink to="/">
                 <button class="orange-dwl-btn">
@@ -39,6 +38,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 
+const isAbout = ref(useRoute().fullPath.includes('/about'))
+
 const isScrolled = ref(false);
 const isSidebarOpen = ref(false);
 
@@ -56,7 +57,7 @@ const closeSidebar = () => {
     height: 10vh;
     width: 100%;
     padding: 0 42px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     display: flex;
     align-items: center;

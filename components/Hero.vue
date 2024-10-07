@@ -22,7 +22,6 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
@@ -78,7 +77,9 @@
 .hero-body-personas .hero-bg-person.p3 {
     position: absolute;
     bottom: 0;
-    right: 420px;
+    display: flex;
+    justify-self: center;
+    right: 30%;
 }
 
 .hero-body-personas .hero-bg-person.p4 {
@@ -116,5 +117,80 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1100px) {
+    .hero-body-personas .hero-bg-person.p1 {
+        width: 350px;
+    }
+
+    .hero-body-personas .hero-bg-person.p2 {
+        width: 270px;
+    }
+
+    .hero-body-personas .hero-bg-person.p3 {
+        right: 25%;
+        height: 250px;
+    }
+
+    .hero-body-personas .hero-bg-person.p4 {
+        width: 350px;
+    }
+
+    .hero-body-personas .hero-bg-person.p5 {
+        width: 300px;
+    }
+
+    .hero-heading {
+        width: 80%;
+        font-size: 55px;
+        line-height: 90px;
+        letter-spacing: -0.02em;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .hero-body-personas .hero-bg-person.p3 {
+        right: 25%;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .hero-body-personas .hero-bg-person.p3 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-heading {
+        width: 80%;
+        font-size: 40px;
+        line-height: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .hero-body-personas .hero-bg-person.p1 {
+        width: 250px;
+    }
+
+    .hero-body-personas .hero-bg-person.p2 {
+        width: 220px;
+    }
+
+    .hero-body-personas .hero-bg-person.p4 {
+        width: 250px;
+    }
+
+    .hero-body-personas .hero-bg-person.p5 {
+        width: 250px;
+    }
+
+    .hero-heading {
+        width: 95%;
+        font-size: 30px;
+        line-height: 40px;
+}
 }
 </style>

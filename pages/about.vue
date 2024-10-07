@@ -1,5 +1,5 @@
 <template>
-    <Hero />
+    <AboutHero  />
     <section class="about-us">
         <div class="header">
             <div class="top-rw">

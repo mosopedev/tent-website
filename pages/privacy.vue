@@ -57,10 +57,15 @@
 </script>
 
 <style scoped>
+.privacy-policy {
+    background-color: #1A1A1A;
+}
+
 .content {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 40px auto 180px;
     padding: 0 20px;
+    color: #fff;
 }
 
 .content h1 {
