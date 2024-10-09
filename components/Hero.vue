@@ -92,7 +92,8 @@
 .hero-body-personas .hero-bg-person.p5 {
     position: absolute;
     right: 0;
-    top: -50px;
+    height: 300px;
+    top: 0;
 }
 
 .hero-body-overlay {
@@ -146,8 +147,9 @@
         font-size: 55px;
         line-height: 90px;
         letter-spacing: -0.02em;
+    }
 }
-}
+
 
 @media screen and (max-width: 900px) {
     .hero-body-personas .hero-bg-person.p3 {
@@ -155,19 +157,26 @@
         height: 200px;
     }
 
-    @media screen and (max-width: 800px) {
-        .hero-body-personas .hero-bg-person.p3 {
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width: 900px) {
     .hero-heading {
         width: 80%;
         font-size: 40px;
         line-height: 50px;
+    }
 }
+
+@media screen and (max-width: 800px) {
+    .hero-body-personas .hero-bg-person.p3 {
+        display: none;
+    }
+
+    .hero-body-bg {
+        height: 100%;
+
+    }
+
+    .hero-body-bg .hero-body-bg-circle {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -191,6 +200,6 @@
         width: 95%;
         font-size: 30px;
         line-height: 40px;
-}
+    }
 }
 </style>

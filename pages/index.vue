@@ -104,7 +104,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     background-color: #F3F2FA;
 }

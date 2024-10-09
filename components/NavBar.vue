@@ -21,7 +21,9 @@
             <div class="bar"></div>
         </div>
 
-        <div :class="['sidebar', { 'sidebar-open': isSidebarOpen }]">
+        
+    </nav>
+<div :class="['sidebar', { 'sidebar-open': isSidebarOpen }]">
             <div class="sidebar-content">
                 <NuxtLink to="/" @click="closeSidebar">Home</NuxtLink>
                 <NuxtLink to="#features" @click="closeSidebar">Features</NuxtLink>
@@ -31,14 +33,11 @@
                 </NuxtLink>
             </div>
         </div>
-    </nav>
-
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 
-const isAbout = ref(useRoute().fullPath.includes('/about'))
 
 const isScrolled = ref(false);
 const isSidebarOpen = ref(false);
@@ -145,7 +144,7 @@ const closeSidebar = () => {
     max-width: 300px;
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
+    z-index: 99999;
     transition: right 0.3s ease;
     padding: 90px 40px;
     /* display: flex; */
