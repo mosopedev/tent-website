@@ -14,7 +14,7 @@
             </div>
             <div class="hero-body-overlay">
                 <h1 class="hero-heading">
-                    The app for party people looking to build lasting connections.
+                    The companion App for all things events
                 </h1>
             </div>
         </div>
