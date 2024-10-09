@@ -51,7 +51,7 @@ const teamMembers = [
 .about-us {
     padding: 50px 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 5vh auto 10vh;
     /* text-align: center; */
 }
 
@@ -106,7 +106,7 @@ const teamMembers = [
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 }

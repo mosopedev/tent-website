@@ -35,14 +35,12 @@
 }
 
 .hero-body {
-    /* background-color: red; */
     width: 100%;
     height: 82vh;
     position: relative;
 }
 
 .hero-body-bg {
-    /* background: rebeccapurple; */
     width: 100%;
     position: absolute;
     display: flex;
@@ -59,13 +57,12 @@
     position: relative;
     width: 100%;
     height: 82vh;
-    /* background-color: rebeccapurple; */
 }
 
 .hero-body-personas .hero-bg-person.p1 {
     position: absolute;
     left: 0;
-    top: -40px;
+    top: -10px;
 }
 
 .hero-body-personas .hero-bg-person.p2 {
@@ -102,7 +99,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: rebeccapurple; */
     top: 0;
     width: 100%;
     height: 100%;
@@ -198,8 +194,8 @@
 
     .hero-heading {
         width: 95%;
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 35px;
+        line-height: 60px;
     }
 }
 </style>

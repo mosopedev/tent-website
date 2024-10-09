@@ -28,6 +28,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    height: 350px;
   }
   
   .team-member-card:hover {
@@ -36,7 +37,7 @@
   
   .member-photo {
     width: 100%;
-    height: 350px;
+    height: 250px;
     object-fit: cover;
     object-position: center;
     border-radius: 12px;

@@ -1,4 +1,5 @@
 <template>
+    <PageLoader />
     <div class="page-container">
         <Hero />
         <h1 class="tent-desc">

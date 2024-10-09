@@ -21,25 +21,23 @@
             <div class="bar"></div>
         </div>
 
-        
+
     </nav>
-<div :class="['sidebar', { 'sidebar-open': isSidebarOpen }]">
-            <div class="sidebar-content">
-                <NuxtLink to="/" @click="closeSidebar">Home</NuxtLink>
-                <NuxtLink to="#features" @click="closeSidebar">Features</NuxtLink>
-                <NuxtLink to="/about" @click="closeSidebar">About Us</NuxtLink>
-                <NuxtLink to="/" @click="closeSidebar">
-                    <button class="orange-dwl-btn">Download Now</button>
-                </NuxtLink>
-            </div>
+    <div :class="['sidebar', { 'sidebar-open': isSidebarOpen }]">
+        <div class="sidebar-content">
+            <NuxtLink to="/" @click="closeSidebar">Home</NuxtLink>
+            <NuxtLink to="#features" @click="closeSidebar">Features</NuxtLink>
+            <NuxtLink to="/about" @click="closeSidebar">About Us</NuxtLink>
+            <NuxtLink to="/" @click="closeSidebar">
+                <button class="orange-dwl-btn">Download Now</button>
+            </NuxtLink>
         </div>
+    </div>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 
-
-const isScrolled = ref(false);
 const isSidebarOpen = ref(false);
 
 const toggleSidebar = () => {
@@ -56,7 +54,6 @@ const closeSidebar = () => {
     height: 10vh;
     width: 100%;
     padding: 0 42px;
-    /* position: sticky; */
     top: 0;
     display: flex;
     align-items: center;
@@ -120,7 +117,6 @@ const closeSidebar = () => {
     font-weight: 600;
 }
 
-/* Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -131,10 +127,9 @@ const closeSidebar = () => {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #fff;
 }
 
-/* Sidebar Styles */
 .sidebar {
     position: fixed;
     top: 0;
@@ -147,10 +142,6 @@ const closeSidebar = () => {
     z-index: 99999;
     transition: right 0.3s ease;
     padding: 90px 40px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
 }
 
 .sidebar-open {
@@ -160,7 +151,6 @@ const closeSidebar = () => {
 .sidebar-content {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 20px;
 }
 
