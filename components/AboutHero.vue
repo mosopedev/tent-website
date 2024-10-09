@@ -86,4 +86,36 @@
     letter-spacing: -0.02em;
     color: #ffffff;
 }
+
+@media screen and (max-width: 1100px) {
+    .hero-body-overlay h1 {
+        font-size: 60px;
+        line-height: 90px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .hero-body-overlay h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .hero-desc-txt {
+    width: 85%;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .hero-body-overlay h1 {
+        width: 95%;
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .hero-desc-txt {
+    width: 95%;
+    font-size: 18px;
+    line-height: 25px;
+}
+}
 </style>

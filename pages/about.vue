@@ -106,9 +106,9 @@ const teamMembers = [
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 @media screen and (max-width: 900px) {
