@@ -13,9 +13,9 @@
             Tent Inc. <span>@ 2024. All rights reserved.</span>
         </p>
         <div class="footer-links">
-            <NuxtLink to="/">Terms of Service</NuxtLink>
+            <NuxtLink to="/terms">Terms of Service</NuxtLink>
             <NuxtLink to="/privacy">Privacy Policy</NuxtLink>
-            <NuxtLink to="/">Support</NuxtLink>
+            <a :href="'mailto:support@thetent.app'">Support</a>
             <NuxtLink to="/about">About</NuxtLink>
         </div>
     </footer>

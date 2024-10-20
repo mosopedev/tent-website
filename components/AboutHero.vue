@@ -5,9 +5,7 @@
             <div class="hero-body-overlay">
                 <h1><span class="orange">Our</span> Mission</h1>
                 <p class="hero-desc-txt">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-                    harum eius, maxime doloribus quas, dicta vel nobis cum, iure dolorem
-                    error perferendis aspernatur rerum ipsum.
+                    At Tent, our mission is simple yet powerful: to connect people with unforgettable experiences while empowering creators with the tools they need to bring those moments to life. We believe in fostering connections through shared experiences, making every event more meaningful.
                 </p>
             </div>
         </div>
@@ -69,10 +67,11 @@
     font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 40px;
     text-align: center;
     color: #ffffff;
+    margin: 0 auto;
 }
 
 .hero-heading {

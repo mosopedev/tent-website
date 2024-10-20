@@ -6,7 +6,8 @@
                 <h2>History</h2>
             </div>
             <p class="team-mission sm">
-                Lorem ipsum dolor sit amet consectetur. Egestas adipiscing enim molestie libero enim metus. Pulvinar nunc feugiat urna non ut scelerisque lacus mi dui. Id lacus purus felis molestie id proin. Consectetur quis ipsum mi consequat. Netus felis scelerisque vestibulum viverra aliquam tellus. Amet nibh magna mauris purus a velit diam. Maecenas fermentum id eget nullam lectus malesuada. Ornare integer cursus mauris auctor imperdiet volutpat vulputate semper. Velit feugiat sed arcu rutrum.            </p>
+                Tent began with a passion for making events more accessible and engaging for everyone. Our founders recognized the challenges of event discovery and management and set out to create a platform that simplifies these processes for users and creators alike. What started as a small project has now grown into a leading platform that bridges the gap between event-goers and organizers, making each event a memorable journey.
+            </p>
         </div>
         <div class="header">
             <div class="top-rw">
@@ -38,12 +39,12 @@
 import TeamMemberCard from "~/components/TeamMemberCard.vue";
 
 const teamMembers = [
-    { name: "Samuel Willson", role: "Founder", image: "member1.png" },
-    { name: "Angelina Hellhop", role: "COO", image: "member1.png" },
-    { name: "Kyle Generale", role: "Product", image: "member1.png" },
-    { name: "Samuel Willson", role: "Engineering", image: "member1.png" },
-    { name: "Angelina Hellhop", role: "Design", image: "member1.png" },
-    { name: "Kyle Generale", role: "Engineering", image: "member1.png" },
+    { name: "Tega Edah-Dike", role: "Founder", image: "member1.png" },
+    { name: "Alfred Onuada", role: "Backend Engineer", image: "member1.png" },
+    { name: "Fortune Onwe", role: "Technical Project Manager", image: "member1.png" },
+    { name: "Orevba John", role: "Product Designer", image: "member1.png" },
+    { name: "Samuel Akujor", role: "Software Engineer", image: "member1.png" },
+    { name: "Omolayo Junaid", role: "Product Manager", image: "member1.png" },
 ];
 </script>
 

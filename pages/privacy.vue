@@ -77,4 +77,8 @@
     font-size: 24px;
     margin-top: 20px;
 }
+
+.content p {
+    font-size: 18px;
+}
 </style>

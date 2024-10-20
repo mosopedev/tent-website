@@ -14,7 +14,7 @@
             </div>
             <div class="hero-body-overlay">
                 <h1 class="hero-heading">
-                    The companion App for all things events
+                    The companion app for all things events.
                 </h1>
             </div>
         </div>
@@ -105,11 +105,11 @@
 }
 
 .hero-heading {
-    width: 80%;
+    width: 70%;
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 75px;
     line-height: 90px;
     text-align: center;
     letter-spacing: -0.02em;
